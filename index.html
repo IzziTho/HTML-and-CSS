@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: sans-serif;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+        .cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            /* height: 320px; */
+            width: 250px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+
+            h2{
+                font-weight: 100;
+                margin: 0;
+            }
+            p{
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 1.7;
+                margin: 15px 0 15px 0;
+            }
+            hr{
+                border-style: solid;
+                border-color: #eee;
+                margin-bottom: 15px;
+            }
+        }
+        .picture {
+            aspect-ratio: 16 / 9 ;
+            display:block ;
+            object-fit: cover;
+            width: 100%;
+
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .footer-picture {
+            border-radius: 50%;
+            width: 30px;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-author {
+            display: flex;
+            align-items: center; 
+            gap: 10px;
+        }
+        .footer-name {
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .footer-date {
+            font-size: 10px;
+            color: grey;
+        }
+        .author-text {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .footer-title {
+            font-size: 8px;
+            color: grey;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/200" class="picture"/>
+            <div class="card-content">
+                <h2>
+                    How To Build Trust At Work
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac malesuada tortor. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vehicula maximus dolor, varius vehicula nibh venenatis at. 
+                </p>
+                <hr/>
+            
+                <div class="card-footer">
+                    <div class="footer-author">
+                        <img src="https://picsum.photos/200" class="footer-picture"/>
+                        <div class="author-text">
+                            <span class="footer-name">
+                                Nina Ford
+                            </span>
+                            <span class="footer-title">
+                                Manager
+                            </span>
+                        </div>
+                    </div>
+                    <span class="footer-date">
+                        8 Apr
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/252" class="picture"/>
+            <div class="card-content">
+                <h2>
+                    How Do You Get Up And Go Forward
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac malesuada tortor. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vehicula maximus dolor, varius vehicula nibh venenatis at. 
+                </p>
+                <hr/>
+            
+                <div class="card-footer">
+                    <div class="footer-author">
+                        <img src="https://picsum.photos/384" class="footer-picture"/>
+                        <div class="author-text">
+                            <span class="footer-name">
+                                Lura Reeves
+                            </span>
+                            <span class="footer-title">
+                                Manager
+                            </span>
+                        </div>
+                    </div>
+                    <span class="footer-date">
+                        8 Apr
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/253" class="picture"/>
+            <div class="card-content">
+                <h2>
+                    Accomplish Great Things In Your Life
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac malesuada tortor. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vehicula maximus dolor, varius vehicula nibh venenatis at. 
+                </p>
+                <hr/>
+            
+                <div class="card-footer">
+                    <div class="footer-author">
+                        <img src="https://picsum.photos/132" class="footer-picture"/>
+                        <div class="author-text">
+                            <span class="footer-name">
+                               Ola Mann
+                            </span>
+                            <span class="footer-title">
+                                Manager
+                            </span>
+                        </div>
+                    </div>
+                    <span class="footer-date">
+                        8 Apr
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        https://icodethis.com/modes/design-to-code/62/submissions
+    </footer>
+</body>
+</html>
