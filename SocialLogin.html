@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+         
+        }
+        body {
+            font-family: "Montserrat", sans-serif;
+            color:white;
+            display: grid;
+            place-items: center;
+            align-content: center;
+            height: 100vh;
+            margin: 0;  
+            background-image: url("https://picsum.photos/id/18/3000");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+         }
+        .login-box {
+            /* From https://css.glass */
+            background: rgba(211, 217, 238, 0.19);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12.3px);
+            -webkit-backdrop-filter: blur(12.3px);
+            border: 1px solid rgba(211, 217, 238, 0.33);
+            /* background-image: linear-gradient(to right, rgb(97, 110, 221), rgb(40, 56, 197));
+            border-radius: 30px;
+            border: 15px solid rgb(222, 225, 253);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); */
+            
+            height: 230px;
+            width: 550px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
+            z-index: 0;
+            position: relative;
+        }
+
+        h2{
+            font-weight: 500;
+            margin:0;
+            font-size: 20px;
+        }
+        p {
+            font-size: 10px;
+            margin: 0;
+            max-width: 35%;
+            text-align: center;
+        }
+        .email-input {
+            height: 40px;
+            width: 250px;
+            border-radius: 50px;
+            border: 1px solid white;
+            background-color: rgba(211, 217, 238, 0.19);
+            padding: 5px 50px 5px 20px;
+            
+        }
+        .email-input::placeholder {
+            font-weight: 100;
+            font-size: 10px;
+            color: white;
+        }
+        .email-wrapper {
+            position: relative;
+        }
+        button {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background-color: white;
+            border: 0 solid white;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+        .profile-footer {
+            display: flex;
+            width: 350px;
+            justify-content: space-evenly;
+            margin-top: -35px;
+            z-index: 1;
+            position: relative;
+
+        }
+        .profile-picture {
+            border-radius: 50%;
+            width: 50px;
+            border: 4px solid white;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.507);
+        }
+        footer {
+            color: black;
+            font-size: 10px;
+            margin-top: 100px;
+        }
+
+        
+       
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>
+            Already working together?
+        </h2>
+        <p>
+            Log in to your account and connect with your teammates!
+        </p>
+            <div class="email-wrapper">
+                <input class="email-input" placeholder="youremail@address.co.uk" type="email"/>
+                <button>
+                    >
+                </button>
+            </div>
+    </div>
+    <div class="profile-footer">
+            <img src="https://picsum.photos/134" class="profile-picture"/>
+            <img src="https://picsum.photos/149" class="profile-picture"/>
+            <img src="https://picsum.photos/200" class="profile-picture"/>
+            <img src="https://picsum.photos/249" class="profile-picture"/>
+            <img src="https://picsum.photos/100" class="profile-picture"/>
+    </div>
+    <footer>
+        https://icodethis.com/modes/design-to-code/45/submissions
+    </footer>
+</body>
+</html>
